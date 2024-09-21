@@ -37,5 +37,10 @@ def get():
         ),
     )
 
+# Thêm route mới cho "/hello"
+@rt("/hello")
+def hello():
+    return "Hello, world!"
+
 
 serve()
